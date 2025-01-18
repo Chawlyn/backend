@@ -1,7 +1,7 @@
 import asyncHandler from '../middlewares/async.js';
 import { ErrorResponse } from "../utils/errorResponse.js";
 import { VendorRepository } from "../repository/vendor.js";
-import { loginUser, resetLink, resetPass, updatePass, verifyOTPInput } from '../validators.js';
+import { loginUser, resetLink, resetPass, updatePass, verifyOTPInput } from '../validators/index.js';
 import { comparePassword } from '../utils/hash.js';
 import { generateToken } from '../utils/jwt.js';
 import crypto from 'crypto'; 

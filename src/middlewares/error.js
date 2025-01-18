@@ -1,4 +1,4 @@
-import { ErrorResponse, ExtendedError } from '../utils/errorResponse';
+import { ErrorResponse } from '../utils/errorResponse.js';
 
 function errorHandler(err, req, res, next) {
   let error = err;

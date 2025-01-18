@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
-import environment from './env';
-import { ErrorResponse } from '../utils/errorResponse';
+import environment from './env.js';
+import { ErrorResponse } from '../utils/errorResponse.js';
 
 const MONGODB_URI = environment.MONGO_URI
 

@@ -21,8 +21,6 @@ app.use(cors({ credentials: true }));
 app.use(express.urlencoded({ extended: true })); 
 app.use(upload.any()); 
 app.use(session({ secret: environment.SESSION_SECRET, resave: false, saveUninitialized: true }));
-app.use(passport.initialize());
-app.use(passport.session());
 
 app.get('/', asyncHandler(async (req, res) => {
   return AppResponse(res, 200, null, 'Welcome');
