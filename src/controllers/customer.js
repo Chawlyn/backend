@@ -3,7 +3,7 @@ import { CustomerRepository } from "../repository/customer.js";
 import { ErrorResponse } from "../utils/errorResponse.js";
 import { comparePassword, compareToken, hashToken } from "../utils/hash.js";
 import { generateToken } from "../utils/jwt.js";
-import { loginUser, resetLink, resetPass, updatePass, verifyOTPInput } from "../validators.js";
+import { loginUser, resetLink, resetPass, updatePass, verifyOTPInput } from "../validators/index.js";
 import crypto from 'crypto';
 import { sendOTP, sendResetLink } from "../utils/sendEmail.js";
 import { registerCustomer } from "../validators/customer.js";

@@ -1,5 +1,5 @@
 import express from 'express';
-import { login, register, resendOTP, verifyOTP, forgetPassword, resetPassword } from '../handlers/vendor.js';
+import { login, register, resendOTP, verifyOTP, forgetPassword, resetPassword } from '../controllers/vendor.js';
 import upload from '../utils/multer.js';
 
 const route = express.Router();
@@ -12,3 +12,5 @@ route.route('/otp/:id')
 
 route.post('/forget-password', forgetPassword);
 route.put('/reset/:resetToken', resetPassword);
+
+export default route;
