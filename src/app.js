@@ -6,8 +6,8 @@ import cors from 'cors';
 import session from "express-session";
 import environment from './config/env.js';
 import { ErrorResponse } from "./utils/errorResponse.js";
-import customerRoute from './deliverymen/customer.js';
-import vendorRoute from './deliverymen/vendor.js';
+import customerRoute from './routes/customer.js';
+import vendorRoute from './routes/vendor.js';
 import upload from "./utils/multer.js";
 
 const app = express();
